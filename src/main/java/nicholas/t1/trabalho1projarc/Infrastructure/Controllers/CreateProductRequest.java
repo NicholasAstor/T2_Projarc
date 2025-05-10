@@ -3,10 +3,12 @@ package nicholas.t1.trabalho1projarc.Infrastructure.Controllers;
 public class CreateProductRequest {
     private String description;
     private Double price;
+    private String SKU;
 
-    public CreateProductRequest(String description, Double price){
+    public CreateProductRequest(String description, Double price, String SKU){
         this.description = description;
         this.price = price;
+        this.SKU = SKU;
     }
 
     public String getDescription() {
@@ -25,5 +27,11 @@ public class CreateProductRequest {
         this.price = price;
     }
 
-    
+    public String getSKU() {
+        return SKU;
+    }
+
+    public void setSKU(String SKU) {
+        this.SKU = SKU;
+    }
 }

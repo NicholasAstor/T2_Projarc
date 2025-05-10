@@ -5,10 +5,10 @@ import nicholas.t1.trabalho1projarc.Infrastructure.Persistence.ProductEntity;
 
 public class ProductEntityMapper {
     ProductEntity toEntity(Product productDomainObj){
-        return new ProductEntity(productDomainObj.getDescription(), productDomainObj.getPrice());
+        return new ProductEntity(productDomainObj.getDescription(), productDomainObj.getPrice(), productDomainObj.getSKU());
     }
 
     Product toDomainObj(ProductEntity productEntity){
-        return new Product(productEntity.getId(), productEntity.getDescription(), productEntity.getPrice());
+        return new Product(productEntity.getId(), productEntity.getDescription(), productEntity.getPrice(), productEntity.getSKU(), productEntity.getCreatedAt(), productEntity.isActive());
     }
 }

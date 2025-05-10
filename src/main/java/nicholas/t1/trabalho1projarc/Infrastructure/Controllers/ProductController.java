@@ -13,7 +13,6 @@ import nicholas.t1.trabalho1projarc.Application.Usecases.CreateProductInteractor
 import nicholas.t1.trabalho1projarc.Application.Usecases.ListProductByIdInteractor;
 import nicholas.t1.trabalho1projarc.Application.Usecases.ListProductsInteractor;
 import nicholas.t1.trabalho1projarc.Domain.Entity.Product;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
